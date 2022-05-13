@@ -9,6 +9,7 @@
     - [ ] Notched Wrists
 6. [ ] Needle Model and Simulation
 7. [ ] Sliding Mode Control of Needles
-8. [ ] EKF Observer
-9. [ ] Learned RNN Observer
-10. [ ] Electronics Swap Overview
+8. [ ] Fabrication & Calibration of Electromagnetically Tracked Fiducials
+9. [ ] EKF Observer
+10. [ ] Learned RNN Observer
+11. [ ] Electronics Swap Overview

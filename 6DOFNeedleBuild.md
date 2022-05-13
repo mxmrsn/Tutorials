@@ -30,7 +30,7 @@ Note: especially with the smaller backbone on the NIH style needle, the backbone
 
 8. Soldering the sensor wires into the connector. TODO: add picture of pinout. Glue the sensor wires to the SROM chip to strain-relief them, make sure that the sheath is inside of the plastic collet when securing them down. The sensor wires should not be in tension or strained - the sheath should provide the mechanical attachment of the Nitinol tube to the plastic connector.
 
-9. Programming the SROM. Using NDI 6D Architect, upload the .ROM file onto the SROM chip. The .ROM files can be obtained through the NDI Support site - you need to have an account to login to access these resources.
+9. Programming the SROM. Using NDI 6D Architect, upload the .ROM file onto the SROM chip. The .ROM files can be obtained through the NDI Support [site](https://support.ndigital.com/s/) - you need to have an account to login to access these resources.
 
 10. Open NDI Track and ensure that the sensor gives good readings and does not give 'BROKEN_SENSOR' or 'MISSING_TOOL' error codes.
 

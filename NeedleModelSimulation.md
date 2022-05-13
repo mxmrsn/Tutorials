@@ -31,6 +31,27 @@ U = [v; w];
 
 The needle model evolution can be written as a markov model:
 
+```
+x_dot = f(x,u)
+```
+
+We can integrate the model with standard Euler integration, as long as the timestep is small
+
+```
+dt = 0.01; % sec
+x_kp1 = x_k + x_dot*dt;
+```
+
+For a control input profile, we can loop through a simulation:
+
+```
+x(1) = [0;0;0; 1;0;0;0]; % [p; q]
+for ii = 2:length(u)
+    x_dot = f(x(:,ii-1), u(:,ii));
+    x(:,ii) = x(:,ii-1) + x_dot*dt;
+end
+```
+
 
 ## Code
 

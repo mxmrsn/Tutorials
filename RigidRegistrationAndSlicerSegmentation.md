@@ -2,7 +2,7 @@
 
 ## Slicer Segmentation
 1. Follow and reference Slicer [tutorials](https://slicer.readthedocs.io/en/latest/user_guide/image_segmentation.html) to segment anatomy from CT/MRI 3D dataset. Find example CT scans in the medlab server under /Max/DATA/CTScans/
-2. Export the segmentation as STL.
+2. Export the segmentation as STL. Make sure that the coordinates are defined in the RAS coordinates, otherwise LPS is a left-handed coordinate system and you have to manually flip a dimension to make it proper.
 
 ## Meshlab Downsampling
 3. Downsample the STL to a target of 30,000 faces using [Meshlab](https://www.meshlab.net/). Note that Meshlab can be called from the command line for programmatic deployment/integration with other code. Meshlab is also useful for repairing meshes if they are incomplete or contain holes, need to be smoothed or modified.
@@ -37,7 +37,7 @@ The ```daspect([1 1 1])``` command sets the aspect ratio of the view to make sur
 ![skull_ptcloud](/imgs/reg_tut/pointcloud_matlab.png)
 
 7. Augment the points into homogeneous form ([x y z 1]).
-8. Define a known homogeneous transformation matrix to transform the points with. For example, we can define this transform:
+8. Define a known homogeneous transformation matrix to transform the points with. For example, we can define a transform that rotates 180 about the y-axis and then translates some arbitrary offset:
 ```
  T = [axang2rotm([0 1 0 pi]) [100 -50 -20]'; zeros(1,3) 1];
 ```

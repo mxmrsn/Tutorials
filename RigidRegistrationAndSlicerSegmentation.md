@@ -5,9 +5,19 @@
 2. Export the segmentation as STL.
 
 ## Meshlab Downsampling
-3. Downsample the STL to 30,000 vertices using [Meshlab](https://www.meshlab.net/).
+3. Downsample the STL to a target of 30,000 faces using [Meshlab](https://www.meshlab.net/). Note that Meshlab can be called from the command line for programmatic deployment/integration with other code. Meshlab is also useful for repairing meshes if they are incomplete or contain holes, need to be smoothed or modified.
 ![meshlab_screenshot](/imgs/meshlab_downsample.png)
+When downsampling the mesh, we have a tradeoff between the amount of detail preserved and the file size. This is a qualitative judgement call. After downsampling the skull mesh, we have:
+![downsampled_skull](/imgs/downsampled_skull.png)
+Export this stl using "Export Mesh As"
+
+## Matlab Import Mesh
 4. Import STL into Matlab using [stlread()](https://www.mathworks.com/matlabcentral/fileexchange/22409-stl-file-reader)
+![mesh_matlab](/imgs/mesh_matlab.png)
+Using the patch command, we can visualize the stl.
+![render_mesh_matlab](/imgs/render_mesh_matlab.png)
+
+## Rigid Registration
 5. Copy the points of the STL vertices into a variable "pts"
 6. Augment the points into homogeneous form ([x y z 1]).
 7. Define a known homogeneous transformation matrix to transform the points with.
@@ -16,4 +26,4 @@
 10. You should now have 2 point clouds, with a known transformation that relates the two. Using the rigid point-based registration algorithm outlined by Fitzpatrick, back out the transform using only the two sets of points.
 11. Lastly, 3D print the segmented anatomy on one of the 3D printers.
 
-You are now a Slicer/Rigid Registration Expert!
+You are now a Slicer/Meshlab/Rigid Registration Expert!

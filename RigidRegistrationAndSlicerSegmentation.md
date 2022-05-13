@@ -17,7 +17,10 @@ Export this stl using "Export Mesh As"
 4. Import STL into Matlab using [stlread()](https://www.mathworks.com/matlabcentral/fileexchange/22409-stl-file-reader)
 ![mesh_matlab](/imgs/mesh_matlab.png)
 
-Using the patch command, we can visualize the stl.
+Using the patch command, we can visualize the stl. The patch command takes a bunch of key-value pairs, but we only need to set 'Faces', 'Vertices', and some coloring options:
+```
+patch('Faces',M.faces,'Vertices',M.vertices,'EdgeColor','none','FaceColor','r')
+```
 ![render_mesh_matlab](/imgs/render_mesh_matlab.png)
 
 ## Rigid Registration

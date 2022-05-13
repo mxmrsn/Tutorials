@@ -34,4 +34,4 @@ Note: especially with the smaller backbone on the NIH style needle, the backbone
 
 10. Open NDI Track and ensure that the sensor gives good readings and does not give 'BROKEN_SENSOR' or 'MISSING_TOOL' error codes.
 
-You now have a sensorized steerable needle! Keep in mind that in order to steer this under closed-loop control the needle rotational offset must be calibrated, as we have no way of orienting the sensor roll angle with respect to the bevel. This will be covered in 'NeedleCalibration.md'.
+You now have a sensorized steerable needle! Keep in mind that in order to steer this under closed-loop control the needle rotational offset must be calibrated, as we have no way of orienting the sensor roll angle with respect to the bevel. This will be covered in [NeedleCalibration](NeedleCalibration.md).

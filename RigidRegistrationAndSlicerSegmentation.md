@@ -25,9 +25,9 @@ Using the patch command, we can visualize the stl.
 
 7. Augment the points into homogeneous form ([x y z 1]).
 8. Define a known homogeneous transformation matrix to transform the points with. For example, we can define this transform:
-'''
+```
  T = [axang2rotm([0 1 0 pi]) [100 -50 -20]'; zeros(1,3) 1];
-'''
+```
 
 ![known_tform](/imgs/known_tform.png)
 

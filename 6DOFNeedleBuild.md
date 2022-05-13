@@ -20,11 +20,11 @@ Note: especially with the smaller backbone on the NIH style needle, the backbone
 
 3. If the needle is not lasercut with the desired needle tip geometry, we usually fabricate this manually. Using a dremel mounted in the bench vise, and observing proper safety measures (tied up hair, no long sleeves, safety glasses, etc.), we grind the bevel geometry into the Nitinol tube. We have an aluminum jig that can help with grinding the correct bevel angle - I usually just do this freehand, checking frequently to make sure that I don't remove too much material and overshoot the desired geometry.
 
-4. Deburring - using a fresh Xacto knife blade, make sure to de-burr the edge of the tube where the cut was made to ensure that the ID/OD geometry is preserved and that the sensor can fit through. You can also use needle files and the dissection microscope to aide in this process. In all of these steps, be sure to take your time, otherwise you have to start over.
+4. Deburring - using a fresh, sharp Xacto knife blade, make sure to de-burr the edge of the tube where the cut was made to ensure that the ID/OD geometry is preserved and that the sensor can fit through. You can also use needle files and the dissection microscope to aide in this process. In all of these steps, be sure to take your time, otherwise you have to start over.
 
 5. Assemble the needle. TODO: add pics and diagrams of how this goes together
 
-6. Glue the sensor into the needle, and glue the bevel face closed.
+6. Glue the sensor into the needle, and glue the bevel face closed. Loctite gap-filling super glue works best with accelerant. Note that applying accelerant creates a lower-strength bond with more brittle material properties. This is not recommended for the connections of the needle to the shaft or connector tube. The best glue for those bonds is rubberized/flexible superglue or epoxy.
 
 7. Put a plastic sheath over the exposed sensor wires, ensuring that there is adequate overlap of the sheath onto the Nitinol tube backend (not too much though to make sure that the collet can be mounted at the appropriate spot for coupling to the actuation unit).
 
@@ -34,4 +34,4 @@ Note: especially with the smaller backbone on the NIH style needle, the backbone
 
 10. Open NDI Track and ensure that the sensor gives good readings and does not give 'BROKEN_SENSOR' or 'MISSING_TOOL' error codes.
 
-You now have a sensorized steerable needle! Keep in mind that in order to steer this under closed-loop control the needle rotational offset must be calibrated.
+You now have a sensorized steerable needle! Keep in mind that in order to steer this under closed-loop control the needle rotational offset must be calibrated, as we have no way of orienting the sensor roll angle with respect to the bevel. This will be covered in 'NeedleCalibration.md'.

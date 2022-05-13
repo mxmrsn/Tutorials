@@ -1,10 +1,12 @@
 # Needle Model Simulation
 
-This tutorial aims to guide you through simulating a standard unicycle needle model. We will be simulating the model using MATLAB. Refer to []() for an in-depth discussion of the nonholonomic unicycle model.
+This tutorial aims to guide you through simulating a standard unicycle needle model. We will be simulating the model using MATLAB. Refer to [Webster 2006](http://research.vuse.vanderbilt.edu/MEDLab/sites/default/files/papers/WebsterJRR2006.pdf) for an in-depth discussion of the nonholonomic unicycle model.
 
 The model makes an analogy to a unicycle wheel rolling on a plane. The nonholonomic constraint of a wheel rolling on a plane means that the wheel can only roll without slip, and that it can only precess about the tangent direction of the rolling (i.e. it cannot slip laterally).
 
 The bending plane of the needle is determined by the orientation of the bevel. The bending plane changes instantaneously as the body of the needle rotates. In the case of the unicycle model, the needle always bends with a constant curvature with radius r. The radius r is the only model parameter in the model and is calibrated for a given needle in a given tissue.
+
+**TODO: add pics**
 
 ## Assumptions
 
@@ -12,9 +14,7 @@ The model neglects any and all tissue interactions that occur along the needle b
 
 The model is purely kinematic and assumes that velocity of insertion and rotation does not change the radius of curvature.
 
-The model assumes that the control inputs are transmitted instantaneously without lag to the tip of the needle.
-
-This assumption is circumnavigated by putting a 6DOF sensor in the tip of the needle where we can directly sense the spatial and angular velocity of the needle body.
+The model assumes that the control inputs are transmitted instantaneously without lag to the tip of the needle. This assumption is circumnavigated by putting a 6DOF sensor in the tip of the needle where we can directly sense the spatial and angular velocity of the needle body.
 
 ## Model Formulation
 

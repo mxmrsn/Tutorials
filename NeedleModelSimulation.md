@@ -9,8 +9,12 @@ The bending plane of the needle is determined by the orientation of the bevel. T
 ## Assumptions
 
 The model neglects any and all tissue interactions that occur along the needle backbone.
+
 The model is purely kinematic and assumes that velocity of insertion and rotation does not change the radius of curvature.
-The model assumes that the control inputs are transmitted instantaneously without lag to the tip of the needle. This assumption is circumnavigated by putting a 6DOF sensor in the tip of the needle where we can directly sense the spatial and angular velocity of the needle body.
+
+The model assumes that the control inputs are transmitted instantaneously without lag to the tip of the needle.
+
+This assumption is circumnavigated by putting a 6DOF sensor in the tip of the needle where we can directly sense the spatial and angular velocity of the needle body.
 
 ## Model Formulation
 

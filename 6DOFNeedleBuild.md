@@ -26,11 +26,11 @@ Note: especially with the smaller backbone on the NIH style needle, the backbone
 
 6. Glue the sensor into the needle, and glue the bevel face closed. Loctite gap-filling super glue works best with accelerant. Note that applying accelerant creates a lower-strength bond with more brittle material properties. This is not recommended for the connections of the needle to the shaft or connector tube. The best glue for those bonds is rubberized/flexible superglue or epoxy.
 
-7. Put a plastic sheath over the exposed sensor wires, ensuring that there is adequate overlap of the sheath onto the Nitinol tube backend (not too much though to make sure that the collet can be mounted at the appropriate spot for coupling to the actuation unit).
+7. Put a plastic sheath over the exposed sensor wires, ensuring that there is adequate overlap of the sheath onto the Nitinol tube backend (not too much though to make sure that the metal gear dremel collet can be mounted at the appropriate spot for coupling to the actuation unit).
 
 8. Soldering the sensor wires into the connector. TODO: add picture of pinout. Glue the sensor wires to the SROM chip to strain-relief them, make sure that the sheath is inside of the plastic collet when securing them down. The sensor wires should not be in tension or strained - the sheath should provide the mechanical attachment of the Nitinol tube to the plastic connector.
 
-9. Programming the SROM. Using NDI 6D Architect, upload the .ROM file onto the SROM chip. The .ROM files can be obtained through the NDI Support [site](https://support.ndigital.com/s/) - you need to have an account to login to access these resources.
+9. Programming the SROM. Using NDI 6D Architect, upload the .ROM file onto the SROM chip. The .ROM files can be obtained through the [NDI Support site](https://support.ndigital.com/s/) - you need to have an account to login to access these resources.
 
 10. Open NDI Track and ensure that the sensor gives good readings and does not give 'BROKEN_SENSOR' or 'MISSING_TOOL' error codes.
 

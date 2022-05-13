@@ -7,8 +7,10 @@
 ## Meshlab Downsampling
 3. Downsample the STL to a target of 30,000 faces using [Meshlab](https://www.meshlab.net/). Note that Meshlab can be called from the command line for programmatic deployment/integration with other code. Meshlab is also useful for repairing meshes if they are incomplete or contain holes, need to be smoothed or modified.
 ![meshlab_screenshot](/imgs/meshlab_downsample.png)
+
 When downsampling the mesh, we have a tradeoff between the amount of detail preserved and the file size. This is a qualitative judgement call. After downsampling the skull mesh, we have:
 ![downsampled_skull](/imgs/downsampled_skull.png)
+
 Export this stl using "Export Mesh As"
 
 ## Matlab Import Mesh

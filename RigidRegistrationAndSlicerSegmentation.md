@@ -64,6 +64,8 @@ In this problem, we assume that the points are related by a rigid homogeneous tr
 
 where T is the rigid transform relating the two point clouds, and C is the correspondence matrix that assigns the labels between corresponding points. The algorithm considers the total number of points in the scene <img src="https://render.githubusercontent.com/render/math?math=N_s"> and the total number of points in the model <img src="https://render.githubusercontent.com/render/math?math=N_m">. Note that not every point must have a correspondence, and as such is masked out and neglected in the optimization.
 
+For more discussion on this topic see [Russ Tedrake's Robotic Manipulation Textbook](https://manipulation.csail.mit.edu/pose.html). This is a great resource that covers a lot of really interesting and relevant topics.
+
 12. Lastly, 3D print the segmented anatomy on one of the 3D printers.
 
 You are now a Slicer/Meshlab/Rigid Registration Expert!

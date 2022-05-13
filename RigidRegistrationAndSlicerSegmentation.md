@@ -13,7 +13,7 @@ When downsampling the mesh, we have a tradeoff between the amount of detail pres
 
 ![downsampled_skull](/imgs/reg_tut/downsampled_skull.png)
 
-Export this stl using "Export Mesh As"
+Export this stl using "File >> Export Mesh As"
 
 ## Matlab Import Mesh
 4. Import STL into Matlab using [stlread()](https://www.mathworks.com/matlabcentral/fileexchange/22409-stl-file-reader)
@@ -23,7 +23,10 @@ Export this stl using "Export Mesh As"
 Using the patch command, we can visualize the stl. The patch command takes a bunch of key-value pairs, but we only need to set 'Faces', 'Vertices', and some coloring options:
 ```
 patch('Faces',M.faces,'Vertices',M.vertices,'EdgeColor','none','FaceColor','r')
+daspect([1 1 1]); view(3); camlight headlight;
 ```
+
+The ```daspect([1 1 1])``` command sets the aspect ratio of the view to make sure everything is 1:1. The camlight provides some reflections that makes the mesh look nicer.
 
 ![render_mesh_matlab](/imgs/reg_tut/render_mesh_matlab.png)
 

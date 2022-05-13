@@ -4,7 +4,7 @@
 2. [ ] Building a 6DOF Needle
 3. [ ] Building a 5DOF Needle
 4. [ ] Designing Lasercut Tube Designs
-    - [ ] NIH Flexure Hinge
+    - [ ] NIH Flexure Hinge Needle
     - [ ] Notched Wrists
 5. [ ] Needle Model and Simulation
 6. [ ] Sliding Mode Control of Needles

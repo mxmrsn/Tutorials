@@ -6,7 +6,7 @@
 
 ## Meshlab Downsampling
 3. Downsample the STL to 30,000 vertices using [Meshlab](https://www.meshlab.net/).
-[meshlab_screenshot](/imgs/meshlab_downsample.png)
+![meshlab_screenshot](/imgs/meshlab_downsample.png)
 4. Import STL into Matlab using [stlread()](https://www.mathworks.com/matlabcentral/fileexchange/22409-stl-file-reader)
 5. Copy the points of the STL vertices into a variable "pts"
 6. Augment the points into homogeneous form ([x y z 1]).

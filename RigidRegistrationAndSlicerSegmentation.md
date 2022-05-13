@@ -55,9 +55,14 @@ The ```daspect([1 1 1])``` command sets the aspect ratio of the view to make sur
 
 <img src="https://render.githubusercontent.com/render/math?math=\min_{T \in SE(3)} \sum_{i=1}^{N} \hspace{1mm} \rVert Tp^{m_i} - p^{s_i} \lVert^2">
 
+where <img src="https://render.githubusercontent.com/render/math?math=p^{m_i}"> are the model points, and <img src="https://render.githubusercontent.com/render/math?math=p^{s_i}"> are the scene points.
+In this problem, we assume that the points are related by a rigid homogeneous transform, and that we know the point correspondence (i.e. the labels of each point in each frame). The optimization attempts to minimize the mean squared error between all points, attempting to solve for the transform that produces points that overlap perfectly.
+
 ### Iterative Closest Point (ICP) Registration Solves:
 
 <img src="https://render.githubusercontent.com/render/math?math=\min_{T \in SE(3), C} \sum_{i=1}^{N_s} \sum_{j=1}^{N_m} C_{ij} \hspace{1mm} \lVert Tp^{m_j} - p^{s_i} \rVert^2">
+
+where T is the rigid transform relating the two point clouds, and C is the correspondence matrix that assigns the labels between corresponding points. The algorithm considers the total number of points in the scene <img src="https://render.githubusercontent.com/render/math?math=N_s"> and the total number of points in the model <img src="https://render.githubusercontent.com/render/math?math=N_m">. Note that not every point must have a correspondence, and as such is masked out and neglected in the optimization.
 
 12. Lastly, 3D print the segmented anatomy on one of the 3D printers.
 

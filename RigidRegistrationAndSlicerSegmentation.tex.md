@@ -49,7 +49,23 @@ The ```daspect([1 1 1])``` command sets the aspect ratio of the view to make sur
 
 ![tformed_pts](/imgs/reg_tut/tformed_pts.png)
 
-11. You should now have 2 point clouds, with a known transformation that relates the two. Using the rigid point-based registration algorithm outlined by Fitzpatrick, back out the transform using only the two sets of points.
+11. You should now have 2 point clouds, with a known transformation that relates the two. Using the rigid point-based registration algorithm outlined by Fitzpatrick, back out the transform using only the two sets of points. Note that this approach assumes that we know the point correspondence (i.e. if we were to label all of the points in the pointcloud from 1-90,000, we know the point number in each of the meshes). This is often not the case. If we do not know point correspondences, we can solve for them using ICP, where we solve for a correspondence matrix C and the rigid transform T that relates the two point clouds.
+
+Rigid Point-Based Registration Solves:
+$$
+\begin{equation}
+    \min_{T \in SE(3)} \sum_{i=1}^{N} \hspace{1mm} \rVert Tp^{m_i} - p^{s_i} \lVert^2\text{,}
+\end{equation}
+$$
+
+Iterative Closest Point (ICP) Registration Solves:
+
+$$
+\begin{equation}
+    \min_{T \in SE(3), C} \sum_{i=1}^{N_s} \sum_{j=1}^{N_m} C_{ij} \hspace{1mm} \lVert Tp^{m_j} - p^{s_i} \rVert^2 \text{,}
+\end{equation}
+$$
+
 12. Lastly, 3D print the segmented anatomy on one of the 3D printers.
 
 You are now a Slicer/Meshlab/Rigid Registration Expert!

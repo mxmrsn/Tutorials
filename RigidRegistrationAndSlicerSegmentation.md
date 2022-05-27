@@ -31,7 +31,7 @@ The ```daspect([1 1 1])``` command sets the aspect ratio of the view to make sur
 ![render_mesh_matlab](/imgs/reg_tut/render_mesh_matlab.png)
 
 ## Rigid Registration
-5. Copy the points of the STL vertices into a variable "pts"
+5.  Copy the points of the STL vertices into a variable "pts"
 
 ```
 pts = M.vertices;
@@ -40,8 +40,8 @@ pts = M.vertices;
 6. We can visualize the point cloud with the scatter3() command in matlab.
 
 ```
-h = figure(2); h2.Color = 'w'; clf;
-scatter3(pts(:,1),pts(:,2),pts(:,3),1,'k',filled');
+h = figure(1); h1.Color = 'w'; clf;
+scatter3(pts(:,1),pts(:,2),pts(:,3),1,'k','filled');
 daspect([1 1 1]); view(3);
 ```
 
@@ -72,6 +72,8 @@ where <img src="https://render.githubusercontent.com/render/math?math=p^{m_i}"> 
 In this problem, we assume that the points are related by a rigid homogeneous transform, and that we know the point correspondence (i.e. the labels of each point in each frame). The optimization attempts to minimize the sum of squares error between all points, attempting to solve for the transform that produces points that overlap perfectly.
 
 The nuance is that we need to handle the solution for the rotation matrix component of the transform, enforcing the orthonormality constraint. This is discussed by Fitzpatrick and is elegantly handled with ``` svd() ``` and a check on the determinant of the rotation matrix.
+
+In Fitzpatrick's handbook, we are using Algorithm 8.1
 
 ### Iterative Closest Point (ICP) Registration Solves:
 

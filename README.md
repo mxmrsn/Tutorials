@@ -1,8 +1,8 @@
 # Tutorials for Steerable Needle Project
 
 - [x] Rigid Registration, Meshlab, and Slicer
-- [ ] Building a 6DOF Steerable Needle
-- [ ] Building a 5DOF Steerable Needle
+- [x] Building a 6DOF Steerable Needle
+- [x] Building a 5DOF Needle
 - [ ] Calibration of Steerable Needles
 - [ ] Designing Lasercut Tube Designs
   - [ ] NIH Flexure Hinge Needle
@@ -13,6 +13,7 @@
   - [ ] Pivot Calibration of EM-tracked Probe
   - [ ] Design a Plastic Marker with Fiducials
   - [ ] Calibrate the Plastic Marker with Embedded EM tracker for Live Registration
+  - [ ] Sliding window filter
 - [ ] EKF Observer
 - [ ] Learned RNN Observer
 - [ ] Electronics Swap Overview

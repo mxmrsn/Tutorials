@@ -24,4 +24,4 @@ We aim to minimize the following objective function:
 <img src="https://render.githubusercontent.com/render/math?math=f(\eta) = \sum_{i=1}^(N) d_p">
 
 
-<!-- <img src="https://render.githubusercontent.com/render/math?math=\min_{T \in SE(3), C} \sum_{i=1}^{N_s} \sum_{j=1}^{N_m} C_{ij} \hspace{1mm} \lVert Tp^{m_j} - p^{s_i} \rVert^2"> -->
+<img src="https://render.githubusercontent.com/render/math?math=\min_{T \in SE(3), C} \sum_{i=1}^{N_s} \sum_{j=1}^{N_m} C_{ij} \hspace{1mm} \lVert Tp^{m_j} - p^{s_i} \rVert^2">

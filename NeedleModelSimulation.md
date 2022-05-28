@@ -4,7 +4,7 @@ This tutorial aims to guide you through simulating a standard unicycle needle mo
 
 The model makes an analogy to a unicycle wheel rolling on a plane. The nonholonomic constraint of a wheel rolling on a plane means that the wheel can only roll without slip, and that it can only precess about the tangent direction of the rolling (i.e. it cannot slip laterally).
 
-The bending plane of the needle is determined by the orientation of the bevel. The bending plane changes instantaneously as the body of the needle rotates. In the case of the unicycle model, the needle always bends with a constant curvature with radius r. The radius r is the only model parameter in the model and is calibrated for a given needle in a given tissue.
+The bending plane of the needle is determined by the orientation of the bevel. The bending plane changes instantaneously as the body of the needle rotates. In the case of the unicycle model, the needle always bends with a constant curvature with radius r. The radius r is the only model parameter in the model and is calibrated for a given needle in a given tissue given a minimum insertion length.
 
 **TODO: add pics**
 

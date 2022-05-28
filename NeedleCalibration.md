@@ -19,7 +19,7 @@ Using this parameterization, we aim to find these 3 parameters (2 vectors and a 
 
 More explicitly, we have a parameter vector:
 
-<img src="https://render.githubusercontent.com/render/math?math=\pi = c_x \hspace{1mm} c_y \hspace{1mm} c_z \hspace{1mm} n_x \hspace{1mm} n_y \hspace{1mm} n_z \hspace{1mm} r">
+<img src="https://render.githubusercontent.com/render/math?math=\pi={c_x \hspace{1mm} c_y \hspace{1mm} c_z \hspace{1mm} n_x \hspace{1mm} n_y \hspace{1mm} n_z \hspace{1mm} r}">
 
 We aim to minimize the following objective function:
 

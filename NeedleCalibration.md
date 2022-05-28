@@ -18,7 +18,7 @@ We can parameterize a circle in a plane by three parameters: the center point of
 Using this parameterization, we aim to find these 3 parameters (2 vectors and a scalar) by minimizing some objective function that is performing the fit of the needle position data to the circle residing in the plane.
 
 More explicitly, we have a parameter vector:
-<img src="https://render.githubusercontent.com/render/math?math=]\eta = [c_x c_y c_z n_x n_y n_z r]^T">
+<img src="https://render.githubusercontent.com/render/math?math=]\eta = c_x c_y c_z n_x n_y n_z r">
 
 We aim to minimize the following objective function:
 <img src="https://render.githubusercontent.com/render/math?math=f(\eta) = \sum_{i=1}^(N) \text{distance from circle}">

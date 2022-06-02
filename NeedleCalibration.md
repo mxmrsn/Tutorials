@@ -47,6 +47,12 @@ We want to find the angle theta that minimizes the angle between ```Rmx``` and t
 
 We can relate the projection of these two vectors through the definition of the [dot product](https://en.wikipedia.org/wiki/Dot_product) of two vectors. We can solve for theta using a cosine inverse. However, we need to be careful of a few things:
 1. Convention of the pure insertion direction (I'm not sure this is enough - basically make sure that the fit circle normal is always in the same direction w.r.t. the EM tracker frame, otherwise sometimes it is reversed w.r.t. the plane)
-2. Cosine inverse is not great, as it can produce a reversed result. Instead, define stheta and ctheta and use ```atan2()``` to solve for theta.
+2. Cosine inverse is not great, as it can produce a reversed result. Instead, define stheta and ctheta and use
+
+```
+ctheta = dot(Rmx,n)
+stheta = 1-ctheta^2;
+theta = atan2(stheta,ctheta)
+```
 
 ![circle_fit](/imgs/NeedleCalibration/circle_fit.png)

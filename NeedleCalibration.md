@@ -34,6 +34,8 @@ end
 E = e(:); % this stacks all error components into tall vector
 ```
 
+**Note that the performance of a needle is usually described by it's minimum radius of curvature that it can achieve. This is usually computed by quoting the radius of the circle that we fit to several pure insertion trials - luckily we already solved for that with our formulation.**
+
 After solving for the best parameters using a MATLAB or Google CERES (C++) solver, we want to compute the offset angle.
 
 The angle can be described as the angle applied about the z-axis of the base sensor that aligns the x-axis of the sensor with the normal vector. Put otherwise:

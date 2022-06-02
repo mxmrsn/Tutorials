@@ -12,6 +12,7 @@ To use this as a steerable needle, we need to use a model to predict that roll a
 - Nitinol tubing with minimum ID: 0.55mm
 - 5DOF EM tracking sensors (NDI #)
 - SROM chip (NDI)
+- SROM file (NDI Support Site - #)
 - 4-piece connector housing (NDI #)
 - Loctite superglue (McMaster #)
 - Toothpick or other applicator for superglue

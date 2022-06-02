@@ -19,13 +19,34 @@ Using this parameterization, we aim to find these 3 parameters (2 vectors and a 
 
 More explicitly, we have a parameter vector:
 
-<https://latex.codecogs.com/gif.latex?\eta = [\lVert]c_x \hspace{1mm} c_y \hspace{1mm} c_z \hspace{1mm} n_x \hspace{1mm} n_y \hspace{1mm} n_z \hspace{1mm} r]^T" />
+```
+param = [cx cy cz nx ny nz r]';
+```
 
-We aim to minimize the following objective function:
+The error (objective) function that we want to minimize:
 
-<img src="https://render.githubusercontent.com/render/math?math=f{\sum_{i=1}^(N) d_p}" />
+```
+for ii = 1:N
+  % e(:,ii) = distance of pts(:,ii) from closest point on circle arc with params
+end
+E = e(:); % this stacks all error components into tall vector
+```
 
+After solving for the best parameters using a MATLAB or Google CERES (C++) solver, we want to compute the offset angle.
 
-<img src="https://render.githubusercontent.com/render/math?math={\min_{T \in SE(3), C} \sum_{i=1}^{N_s} \sum_{j=1}^{N_m} C_{ij} \hspace{1mm} \lVert Tp^{m_j} - p^{s_i} \rVert^2}" />
+The angle can be described as the angle applied about the z-axis of the base sensor that aligns the x-axis of the sensor with the normal vector. Put otherwise:
 
-<img src="https://latex.codecogs.com/gif.latex?O_t=\text { Onset event at time bin } t " />
+```
+  Rz = axang2rotm([0 0 1 theta])
+  Rm = Rs*Rz;
+  Rmx = Rm(:,1:3);
+  n = [nx; ny; nz];
+```
+
+We want to find the angle theta that minimizes the angle between ```Rmx``` and the normal vector of the plane ```n```.
+
+We can relate the projection of these two vectors through the definition of the [dot product](https://en.wikipedia.org/wiki/Dot_product) of two vectors. We can solve for theta using a cosine inverse. However, we need to be careful of a few things:
+1. Convention of the pure insertion direction (I'm not sure this is enough - basically make sure that the fit circle normal is always in the same direction w.r.t. the EM tracker frame, otherwise sometimes it is reversed w.r.t. the plane)
+2. Cosine inverse is not great, as it can produce a reversed result. Instead, define stheta and ctheta and use ```atan2()``` to solve for theta.
+
+![circle_fit](/imgs/NeedleCalibration/circle_fit.png)

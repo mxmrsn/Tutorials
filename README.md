@@ -4,7 +4,7 @@
 - [x] Building a 6DOF Steerable Needle
 - [x] Building a 5DOF Needle
 - [ ] Calibration of Steerable Needles
-- [ ] Designing Lasercut Tube Designs
+- [ ] Designing and Fabricating Lasercut Tube Designs
   - [ ] NIH Flexure Hinge Needle
   - [ ] Notched Wrists
 - [ ] Needle Model and Simulation

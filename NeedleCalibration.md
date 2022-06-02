@@ -2,6 +2,8 @@
 
 In this section we aim to calibrate the rotational offset of 6DOF sensor to bevel plane of the needle. We have to do this because we have no way of accurately orienting the 6DOF sensor when mounting/gluing it into the needle tip.
 
+**TODO: add a picture of this**
+
 ## Rotational Offset Calibration
 
 We formulate the calibration by considering a pure insertion of the needle. We know that when we perform this insertion, the needle will deflect in the direction of the bevel plane and roughly trace out a circle. Therefore, it is reasonable to say that we want to fit a circle in a plane to the sensor position data as the needle is inserted (for a minimum insertion length).

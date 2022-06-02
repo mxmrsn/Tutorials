@@ -53,8 +53,8 @@ end
 ```
 
 
-## Code
+## Code Homework
 
 The tasks for simulation are two scripts:
-1. Needle Model
-2. Script to integrate the model with different control input profiles
+1. Needle Model function that implements the equations above
+2. Script to integrate the model with different control input profiles (u1(t) and u2(t))

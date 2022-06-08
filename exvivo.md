@@ -6,6 +6,7 @@
 1. Remove the robot transmission from the case and attach it to the Noga arm, using the screw (found in the top of the tool box). You should use the needle nose pliers to place the screw in the inset and then tighten using an allen key. This is best done with two people, one to manage the screw placement and one to hold the robot.
 ![robotarm](/imgs/exvivo/robotarmsetup.png)
 2. Place the electronics box on the bottom of the cart. Ensure that the large black cables (and thusly the transmission) are properly snaked through the middle of the cart towards the table in order to allow for sufficient travel.
+![robotconnections](/imgs/exvivo/robotoutputs.png)
 3. Setting Up the EM Tracker Equipment
   - Pull the rigid table with the support arm to the side of the scanner table and attach the white field generator box to the movable arm
   - Place the large driver box on the bottom shelf of the cart (behind and to the left of the robot)
@@ -45,3 +46,7 @@
 12. In order to be able to change the state of the state machine you'll need another Terminator window. You can do that using ``` rosparam set /control_mode IDLE ```
 13. This is about the end of the Terminator Window Set-Up. See the picture below for the final look:
     ![TerminatorWindowSet-Up](/imgs/exvivo/TerminatorWindowSetup.png)
+
+## Setting Up the Lungs
+**Dropping this photo in. Will add to the protocol**
+![fiducialplacement](/imgs/exvivo/fiducialplacement.png)

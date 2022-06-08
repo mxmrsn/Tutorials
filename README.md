@@ -18,3 +18,4 @@
 - [ ] Learned RNN Observer
 - [ ] Electronics Swap Overview
 - [ ] How to Run an Ex Vivo Experiment
+- [ ] Packing List 

@@ -1,7 +1,7 @@
 # Setting Up an Ex Vivo Experiment
 
 ## Materials List
-
+-
 ## Plugging Up the Robot and the Sensors
 ![robotarm](/imgs/exvivo/robotarmsetup.png)
 

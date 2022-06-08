@@ -11,12 +11,12 @@
   - Option 1: Reverse search USB permissions command using ctrl r
   - Option 2: ``` sudo chmod 666 /dev/ttyUSB0 ```
 3. Command ``` roslaunch rosserial_server socket.launch ``` to start the ros serial server
-    ![successful server launch](/imgs/exvivo/ROSSerialServerSuccess)
+    ![successful server launch](/imgs/exvivo/ROSSerialServerSuccess.png)
 4. Split the terminator window horizontally once and then vertically once
 5. Command ``` rqt ``` in both windows to launch the visual interfaces for lung 1 and lung 2
   - Usually the plugin is already selected, if it isn't choose Plugins>MEDLAB>MCB Test
   - Also need to launch the footpedal gui at some point to drive the aiming device
-    ![rqtgui](/imgs/exvivo/RQTGUI)
+    ![rqtgui](/imgs/exvivo/RQTGUI.png)
 6. Turn on the power switch to the electronics box
   - check that the board initialize (if the boards flash blue and the amps flash red that is bad)
   - If the lights ARE flashing there is an error and you should consult [MCB_ROS Repository](github.com/medlabprojects/MCB_ROS) to troubleshoot.
@@ -32,4 +32,4 @@
   - In another window you can bring up rqt plot if you want to graph any of the topics (although looking at the numerical values for the poses should be sufficient)
 12. In order to be able to change the state of the state machine you'll need another Terminator window. You can do that using ``` rosparam set /control_mode IDLE ```
 13. This is about the end of the Terminator Window Set-Up. See the picture below for the final look:
-    ![TerminatorWindowSet-Up](/imgs/exvivo/TerminatorWindowSetUp)
+    ![TerminatorWindowSet-Up](/imgs/exvivo/TerminatorWindowSetUp.png)

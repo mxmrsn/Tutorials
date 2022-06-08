@@ -6,6 +6,10 @@ The following is an example list but will change for each experiment (below is t
 This case contains the tools for the robot.
 
 - Stylet (x4)
+  - Manual Steer Stylets (0.9 mm OD)
+    - About the same stiffness as clinical tools
+  - Robotic Steer Stylets (0.67 mm OD)
+    - Prone to buckling but fit through our system
 - 5DOF Steerable Needle (x3)
 - Wrist (x3) *would be better to have more
 - Extra Sheath Materials
@@ -35,7 +39,7 @@ This case contains the robot arm, electronics box, and accessories.
 - Bluetooth Keyboard
 - Bluetooth Mouse
 - Current Fiducials (they live in a cardboard box)
-- The Noga arm lives at UNC
+
 
 ## Pelican Case 4 - Tool Boxes
 This case contains several tool boxes. Their contents are detailed below.
@@ -54,6 +58,8 @@ This case contains several tool boxes. Their contents are detailed below.
   - A variety of sizes, needle and wrist take different ones
 - Extra seals for the bronch adapter>et tube connection
 - Screw for the robot (**M8 or 1.25-20 should find out and get extras**)
+- Extra bushings **need to be added**
+
 #### Box Interior
 - Superglue
   - Low Vis Loctite 495
@@ -123,9 +129,28 @@ This case contains several tool boxes. Their contents are detailed below.
 - Ethernet Cables (x2)
 - USB-C to Ethernet Adapters (x2)
 
+### Lunch Tray 
+
 ## Things that live at UNC
 - Planner Laptop
 - Visualization laptop
 - Steel Blocks (x2)
 - Noga Arm for Robot
 - Noga arm for Bronch (has clamp)
+- Monitors (x2)
+- HDMI Cables (x3)
+- Cart
+- Rigid table
+- EM tracker  
+  - Field Generator (White Box)
+  - Breakout Boxes (x2)
+  - Driver Box (big box)
+  - Cables (red, black)
+  - Arm for field Generator
+- Air Supply
+  - Medical Wall Air to Quick Connect Compressed Air Fitting Adapter
+  - Compressed Air Hosing
+  - Pressure Regulator Setup
+  - Clear Silicone Hosing to connect to ET Tube
+- Parafilm
+- Plastic Wrap

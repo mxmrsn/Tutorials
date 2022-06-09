@@ -48,5 +48,23 @@
     ![TerminatorWindowSet-Up](/imgs/exvivo/TerminatorWindowSetup.png)
 
 ## Setting Up the Lungs
-**Dropping this photo in. Will add to the protocol**
+1. Ahead of the experiments, the ex vivo lungs need to be cleaned and prepped in labeled ziploc bags (L1, L2, etc.) The mail order lungs require less prep than the farmer's market but they still need to be prepped.
+2. Plug up the quick change adapter to the medical air supply in the wall. This should also be connected to silicone tubing and the ET tube.
+3. Confirm that the flat patient table is affixed to the CT scanner table.
+4. Add absorbent surgical drapes to the scanner end of the table.
+5. Wrap the lunch tray in paper towel and add it to the scanner end of the table.
+6. Select one of the lungs and remove it from the plastic bag. Let some of the liquid drip of but do not dry out the lung. Place the lung on the lunch tray with the heart up and the trachea facing the ET tube.
+7. With the ET balloon collapsed, insert the ET tube into the trachea. Use the syringe to inflate the ET balloon. At this point you can either inflate the lung to check for leaks (be sure to hold the trachea over the ET tube) or ziptie the trachea to the ET tube and then inflate the lung.
+![inflatedlung](/imgs/exvivo/inflatedlung.jgp)
+8. At this point you can scan the lung for the first time and check for collapse or fissures which may make the lung undesireable. Make sure that the bronchoscope is inserted into the ET tube so that you get a realalistic idea of the lung volume with the leak.
+**insert pic here**
+9. If the lung is satisfactory you can attach the fiducials. they should already be plugged into the break out box and you can neatly uncoil them towards the end of the table.
+10. Apply a layer of superglue (preferably high viscosity) to the underside of the fiducial and place it on the lung.
+11. The order of the fiducials matters, make sure you confirm this with the team. The current layout is as follows:
+  -lf1 is ventral, proximal, and superior
+  -lf2 is ventral, distal, and inferior
+  -lf3 is dorsal, proximal, and superior
+  -lf4 is dorsal, distal, and superior
+  These fiducials form a cubic region in which the robot sensing is best.
 ![fiducialplacement](/imgs/exvivo/fiducialplacement.png)
+12. Once you are happy with the fiducial placement, you can wrap the lung to fix everything to the table.

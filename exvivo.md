@@ -16,7 +16,7 @@
   - Connect the driver box to the robot
   - Connect the driver box to Power
   - Connections are shown in the figure below:
-  ![emtrackerconnections](/imgs/exvivo/emtrackerconnections.png)
+  ![emtrackerconnections](/imgs/exvivo/emtrackerconnections.png) **TODO: fix boxes**
 
 ## Setting Up the Terminator Window
 1. Launch Terminator
@@ -28,7 +28,7 @@
 4. Split the terminator window horizontally once and then vertically once
 5. Command ``` rqt ``` in both windows to launch the visual interfaces for lung 1 and lung 2
   - Usually the plugin is already selected, if it isn't choose Plugins>MEDLAB>MCB Test
-  - Also need to launch the footpedal gui at some point to drive the aiming device
+  - Also need to launch the footpedal gui at some point to drive the aiming device **TODO: put instructions on file>medlab>...etc**
     ![rqtgui](/imgs/exvivo/RQTGUI.png)
 6. Turn on the power switch to the electronics box
   - check that the board initialize (if the boards flash blue and the amps flash red that is bad)
@@ -55,7 +55,7 @@
 5. Wrap the lunch tray in paper towel and add it to the scanner end of the table.
 6. Select one of the lungs and remove it from the plastic bag. Let some of the liquid drip of but do not dry out the lung. Place the lung on the lunch tray with the heart up and the trachea facing the ET tube.
 7. With the ET balloon collapsed, insert the ET tube into the trachea. Use the syringe to inflate the ET balloon. At this point you can either inflate the lung to check for leaks (be sure to hold the trachea over the ET tube) or ziptie the trachea to the ET tube and then inflate the lung.
-![inflatedlung](/imgs/exvivo/inflatedlung.jgp)
+![inflatedlung](/imgs/exvivo/inflatedlung.jgp) **TODO:fix picture embed**
 8. At this point you can scan the lung for the first time and check for collapse or fissures which may make the lung undesireable. Make sure that the bronchoscope is inserted into the ET tube so that you get a realalistic idea of the lung volume with the leak.
 **insert pic here**
 9. If the lung is satisfactory you can attach the fiducials. they should already be plugged into the break out box and you can neatly uncoil them towards the end of the table.

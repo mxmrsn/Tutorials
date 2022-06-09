@@ -20,7 +20,7 @@ The model assumes that the control inputs are transmitted instantaneously withou
 
 The state of the needle is parameterized by the position and orientation of the tip frame. There is a choice of parameterization of the orientation - we typically choose to use rotation matrices or quaternions.
 
-The inputs to the model are 1) the spatial insertion velocity of the needle, and 2) the angular/rotational velocity of the needle.
+The inputs to the model are 1) the spatial insertion velocity of the needle ```v```, and 2) the angular/rotational velocity of the needle ```w```.
 
 We use a state-space representation to describe the state of the needle, as well as the inputs to the model.
 
@@ -29,7 +29,7 @@ X = [p_n; q_n];
 U = [v; w];
 ```
 
-The needle model evolution can be written as a markov model:
+The needle model evolution can be written as a markov model (discrete model that only depends on the prior state and current control inputs):
 
 ```
 x_dot = f(x,u)
@@ -56,5 +56,6 @@ end
 ## Code Homework
 
 The tasks for simulation are two scripts:
-1. Needle Model function that implements the equations above
-2. Script to integrate the model with different control input profiles (u1(t) and u2(t))
+1. Needle Model function that implements the equations above ``` x_dot = f(x,u) ```
+2. Generate control inputs for a set simulation length
+3. Script to integrate the model with different control input profiles (u1(t) and u2(t))

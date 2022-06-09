@@ -17,6 +17,7 @@
 - [ ] EKF Observer
 - [ ] Learned RNN Observer
 - [ ] Electronics Swap Overview
-- [ ] How to Run an Ex Vivo Experiment
-- [ ] Packing List
-- [ ] In Vivo 
+- [ ] Ex Vivo Setup (almost finished, )
+- [X] Packing List
+- [ ] In Vivo Setup (almost finished, )
+- [ ] How to run the robot

@@ -25,11 +25,12 @@
   - Option 2: ``` sudo chmod 666 /dev/ttyUSB0 ```
 3. Command ``` roslaunch rosserial_server socket.launch ``` to start the ros serial server
     ![successful server launch](/imgs/exvivo/ROSSerialServerSuccess.png)
-4. Split the terminator window horizontally once and then vertically once
+4. Split the terminator window horizontally once and then vertically twice
 5. Command ``` rqt ``` in both windows to launch the visual interfaces for lung 1 and lung 2
   - Usually the plugin is already selected, if it isn't choose Plugins>MEDLAB>MCB Test
   - Also need to launch the footpedal gui at some point to drive the aiming device **TODO: put instructions on file>medlab>...etc**
     ![rqtgui](/imgs/exvivo/RQTGUI.png)
+  - Use another rqt command to enable the foot pedal. Go to plugins>MEDLAB>foot pedal.
 6. Turn on the power switch to the electronics box
   - check that the board initialize (if the boards flash blue and the amps flash red that is bad)
   - If the lights ARE flashing there is an error and you should consult [MCB_ROS Repository](github.com/medlabprojects/MCB_ROS) to troubleshoot.

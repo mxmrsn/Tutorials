@@ -37,7 +37,7 @@
 7. In the rqt GUI we want to connect to lung1 and lung2 and Enable ROS Control Mode for both.
 8. Manually enable and jog each motor for each control board to ensure everything is working. If the control effort is excessive you need to check the connections and try again.
 9. In the lung robot package, ``` lung_robot/launch/lung_robot_TorsionEKF.launch ``` change the ``` log_file_name_note ``` value to be the log file name
-10. Split the window again and launch the file using ``` roslaunch lung_robot_TorsionEKF.launch ```
+10. Split the window again and launch the file using ``` roslaunch lung_robot lung_robot_TorsionEKF.launch ```
   - the tracker box should beep and all of the lights should change from yellow to green
 11. Now you should verify that all of the sensors are working
   - Split the window into six vertical windows (one for each sensor)

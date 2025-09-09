@@ -1,7 +1,12 @@
 # Setting Up an Ex Vivo Experiment
 
 ## Materials List
--
+1. Fiducials
+2. Super Glue
+3. Paper Towels
+4. Surgical Drapes
+5. Gloves
+6. Saran Wrap
 ## Plugging Up the Robot and the Sensors
 1. Remove the robot transmission from the case and attach it to the Noga arm, using the screw (found in the top of the tool box). You should use the needle nose pliers to place the screw in the inset and then tighten using an allen key. This is best done with two people, one to manage the screw placement and one to hold the robot.
 ![robotarm](/imgs/exvivo/robotarmsetup.png)
@@ -69,3 +74,13 @@
   These fiducials form a cubic region in which the robot sensing is best.
 ![fiducialplacement](/imgs/exvivo/fiducialplacement.png)
 12. Once you are happy with the fiducial placement, you can wrap the lung to fix everything to the table.
+
+## Segmentaion
+
+## Planner 
+
+1. On the Planner laptop, navigate to the directory 'home/Data', and create a new folder for the experiment. This folder will envtually act as your workspace on Slicer 3D.
+2. The expriment folder must contain the following folders within; 'Segmentaion', 'PlannerSlicerInterface', 'SlicerData' and 'PlannerData'
+3. Import the segmentaion files into the aformentioned folder under a 'Segmentaion'. 
+4. Launch the Slicer 3D software (Desktop)
+5. In the Toolbar on top of
